@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikigns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-slate-800 via-slate-900 to-gray-900">
+    <header >
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Vikigns</span>
+              <img class="h-20 w-auto" src="./assets/viking-title.png" alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+
+            <a href="#" class="text-sm font-semibold leading-6 text-stone-100">Home</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-stone-100">Games</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-stone-100">Vikingns</a>
+          </div>
+          <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          </div> -->
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-10"></div>
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Vikigns</span>
+                <img class="h-8 w-auto" src="./assets/viking-title.png" alt="">
+              </a>
+              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Home</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Games</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Vikingns</a>
+                </div>
+                <!-- <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section  id="Home">
+        <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+              <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                <div class="lg:pr-4">
+                  <div class="lg:max-w-lg">
+                    <p class="text-base font-semibold leading-7 text-indigo-600">Infinito</p>
+                    <h1 class="mt-2 text-3xl font-bold tracking-tight text-stone-100 sm:text-4xl">Pre-Codicon Lexpin</h1>
+                    <p class="mt-6 text-gray-600">Nos inspiramos en la palabras clave INFINITO para crear un juego con HTML5, CSS y JavaScript que nunca acaba, haciendo ilusión al infinito, ambientado en el nombre de nuestro equipo "VIKINGS".</p>
+                  </div>
+                </div>
+              </div>
+              <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="./assets/viking-run.jpeg" alt="">
+              </div>
+              <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                <div class="lg:pr-4">
+                  <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                    <h2 class="mt-16 text-2xl font-bold italic tracking-tight text-indigo-600">VIKIGN RUN </h2>
+                    <p class="mt-6 text-gray-600">Vikign run, tiene como finalidad esquivar todos los obstaculos que se le presenten. Tiene diferentes animaciones dependiendo de la situación en la que se encuentre nuestro pequeño vikingo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="Avatar" class="flex justify-center  hidden lg:flex lg:gap-x-12">
+        <div class="w-64 text-center">
+            <img
+              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+              class="mx-auto mb-4 w-32 rounded-full"
+              alt="Avatar" />
+            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Calos Cuberos</h5>
+            <p class="text-neutral-100 dark:text-neutral-400">Designer</p>
+        </div>
+        <div class="w-64 text-center">
+            <img
+              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+              class="mx-auto mb-4 w-32 rounded-full"
+              alt="Avatar" />
+            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Juan Jauren</h5>
+            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+        </div>
+        <div class="w-64 text-center">
+            <img
+              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+              class="mx-auto mb-4 w-32 rounded-full"
+              alt="Avatar" />
+            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Hakerman</h5>
+            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+        </div>
+        <div class="w-64 text-center">
+            <img
+              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+              class="mx-auto mb-4 w-32 rounded-full"
+              alt="Avatar" />
+            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jose Cruz</h5>
+            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+        </div>
+        <div class="w-64 text-center">
+            <img
+              src="./assets/hc.JPG"
+              class="mx-auto mb-4 w-32 rounded-full"
+              alt="Avatar" />
+            <h5 class="text-stone-100   mb-2 text-xl font-medium leading-tight">Humberto Carreño</h5>
+            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+        </div>
+      </section>
+</body>
+</html>
