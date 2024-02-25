@@ -1,4 +1,14 @@
 
+function mostrarSeccion(id) {
+    const secciones = document.querySelectorAll('main section');
+    secciones.forEach(seccion => {
+        if (seccion.id === id) {
+            seccion.style.display = 'block';
+        } else {
+            seccion.style.display = 'none';
+        }
+    });
+}
 //****** GAME LOOP ********//
 
 let time = new Date();

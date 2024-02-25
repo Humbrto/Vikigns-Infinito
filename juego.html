@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vikingo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styleJuego.css">
 </head>
+
 <body>
+    <header class="relative inline-block">
+        <nav class="fixed top-0 flex w-full items-center justify-around bg-gradient-to-r from-slate-800 via-slate-900 to-gray-900  p-4 lg:px-8 z-10"
+            aria-label="Global">
+            <a href="#" class="">
+                <span class="sr-only">VIKING</span>
+                <img class="h-20 w-auto" src="./assets/viking-title.png" alt="">
+            </a>
+            </div>
+            <div class="flex justify-end pr-12 gap-x-4 lg:gap-x-12 ">
+                <a href="./index.html" id="home" class="text-sm font-semibold leading-6 text-stone-100 ">Home</a>
+                <a href="./juego.html" id="game" class="text-sm font-semibold leading-6 text-stone-100">Games</a>
+                <a href="./index.html#vikings" class="text-sm font-semibold leading-6 text-stone-100">Vikings</a>
+            </div>
+
+        </nav>
+
+    </header>
 
     <div class="contenedor">
 
         <div class="suelo"></div>
-        
+
         <div class="vikingo vikingo-corriendo"></div>
 
         <div class="score">0</div>
-        
+
         <div class="dragon"></div>
     </div>
 
@@ -24,8 +44,9 @@
         <p>HAS PERDIDO</p>
         <button class="boton">Volver a Jugar</button>
     </div>
-    
 
-<script src="./main.js"></script>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
