@@ -5,9 +5,9 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     background: #584040;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     background-image: url(./assets//background.svg);    
     /* background: radial-gradient(closest-side, #1b178c, #221769, #141414); */
