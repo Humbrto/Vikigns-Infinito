@@ -1,14 +1,4 @@
 
-function mostrarSeccion(id) {
-    const secciones = document.querySelectorAll('main section');
-    secciones.forEach(seccion => {
-        if (seccion.id === id) {
-            seccion.style.display = 'block';
-        } else {
-            seccion.style.display = 'none';
-        }
-    });
-}
 //****** GAME LOOP ********//
 
 let time = new Date();
@@ -75,6 +65,7 @@ function Start() {
     gameOver = document.querySelector(".game-over");
     suelo = document.querySelector(".suelo");
     contenedor = document.querySelector(".contenedor");
+    contenedor.addEventListener("touchstart", Saltar);
     textoScore = document.querySelector(".score");
     vikingo = document.querySelector(".vikingo");
     document.addEventListener("keydown", HandleKeyDown);
