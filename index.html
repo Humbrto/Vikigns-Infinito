@@ -7,27 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-r from-slate-800 via-slate-900 to-gray-900 w-full max-w-full box-border">
-    <header >
-        <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1">
+    <header class="relative inline-block">
+        <nav class="fixed top-0 flex w-full items-center justify-between p-4 lg:px-8 " aria-label="Global">
+          <div class="flex lg:flex-1 pl-24">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Vikigns</span>
               <img class="h-20 w-auto" src="./assets/viking-title.png" alt="">
             </a>
           </div>
-          <div class="flex lg:hidden">
+          <!-- <div class="flex lg:hidden">
             <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
               <span class="sr-only">Open main menu</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-
-            <a href="#" class="text-sm font-semibold leading-6 text-stone-100">Home</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-stone-100">Games</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-stone-100">Vikingns</a>
+          </div> -->
+          <div class="hidden lg:flex justify-end pr-12 lg:gap-x-12 ">
+            <a href="#Home" class="text-sm font-semibold leading-6 text-stone-100">Home</a>
+            <a href="#Games" class="text-sm font-semibold leading-6 text-stone-100">Games</a>
+            <a href="#Vikings" class="text-sm font-semibold leading-6 text-stone-100">Vikings</a>
           </div>
           <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
@@ -55,7 +54,7 @@
                 <div class="space-y-2 py-6">
                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Home</a>
                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Games</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Vikingns</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-stone-100 hover:bg-gray-50">Vikings</a>
                 </div>
                 <!-- <div class="py-6">
                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
@@ -64,72 +63,74 @@
             </div>
           </div>
         </div>
-      </header>
-      <section  id="Home" class="ml-52 h-screen">
-        <div class="relative isolate overflow-hidden pt-0 p-24 lg:overflow-visible lg:px-0">
-            <div class="mx-auto flex flex-col ">
-              <div>
-                <div class="lg:pr-4">
-                  <div class="lg:max-w-lg">
-                    <p class="text-base font-semibold leading-7 text-indigo-600">Infinito</p>
-                    <h1 class="mt-2 text-3xl font-bold tracking-tight text-stone-100 sm:text-4xl">Pre-Codicon Lexpin</h1>
-                    <p class="mt-6 text-gray-600 text-justify">Nos inspiramos en la palabras clave INFINITO para crear un juego con HTML5, CSS y JavaScript que nunca acaba, haciendo ilusión al infinito, ambientado en el nombre de nuestro equipo "VIKINGS".</p>
+    </header>
+    <div class="flex flex-col">
+        <section  id="Home" class="mt-32 ml-52 h-screen ">
+            <div class="overflow-hidden pt-0 p-24 lg:overflow-visible lg:px-0">
+                <div class="mx-auto flex flex-col ">
+                  <div>
+                    <div class="lg:pr-4">
+                      <div class="lg:max-w-lg">
+                        <p class="text-lg font-semibold leading-7 text-amber-500">Infinito</p>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-stone-100 sm:text-4xl">Pre-Codicon Lexpin</h1>
+                        <p class="mt-6 text-gray-600 text-justify">Nos inspiramos en la palabras clave INFINITO para crear un juego con HTML5, CSS y JavaScript que nunca acaba, haciendo ilusión al infinito, ambientado en el nombre de nuestro equipo "VIKINGS".</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:overflow-hidden my-6 justify-center">
+                    <img src="./assets/viking-run.jpeg" alt="" class="h-80">
+                  </div>
+                  <div class="lg:pr-4">
+                    <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                      <h2 class="text-2xl font-bold italic tracking-tight text-amber-500">VIKING RUN </h2>
+                      <p class="mt-6 text-gray-600">Viking run, tiene como finalidad esquivar todos los obstaculos que se le presenten. Tiene diferentes animaciones dependiendo de la situación en la que se encuentre nuestro pequeño vikingo.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="lg:overflow-hidden my-6 justify-center">
-                <img src="./assets/viking-run.jpeg" alt="" class="h-80">
-              </div>
-              <div class="lg:pr-4">
-                <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                  <h2 class="text-2xl font-bold italic tracking-tight text-indigo-600">VIKIGN RUN </h2>
-                  <p class="mt-6 text-gray-600">Vikign run, tiene como finalidad esquivar todos los obstaculos que se le presenten. Tiene diferentes animaciones dependiendo de la situación en la que se encuentre nuestro pequeño vikingo.</p>
-                </div>
-              </div>
+        </section>
+        <section id="Vikings" class=" flex justify-center mb-20 hidden lg:flex lg:gap-x-12">
+            <div class="w-64 text-center">
+                <img
+                  src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+                  class="mx-auto mb-4 w-32 rounded-full"
+                  alt="Avatar" />
+                <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Calos Cuberos</h5>
+                <p class="text-neutral-100 dark:text-neutral-400">Designer</p>
             </div>
-          </div>
-      </section>
-      <section id="Avatar" class="flex justify-center mb-20 hidden lg:flex lg:gap-x-12">
-        <div class="w-64 text-center">
-            <img
-              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
-              class="mx-auto mb-4 w-32 rounded-full"
-              alt="Avatar" />
-            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Calos Cuberos</h5>
-            <p class="text-neutral-100 dark:text-neutral-400">Designer</p>
-        </div>
-        <div class="w-64 text-center">
-            <img
-              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
-              class="mx-auto mb-4 w-32 rounded-full"
-              alt="Avatar" />
-            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Juan Jauren</h5>
-            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-        </div>
-        <div class="w-64 text-center">
-            <img
-              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
-              class="mx-auto mb-4 w-32 rounded-full"
-              alt="Avatar" />
-            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Hakerman</h5>
-            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-        </div>
-        <div class="w-64 text-center">
-            <img
-              src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
-              class="mx-auto mb-4 w-32 rounded-full"
-              alt="Avatar" />
-            <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jose Cruz</h5>
-            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-        </div>
-        <div class="w-64 text-center">
-            <img
-              src="./assets/hc.JPG"
-              class="mx-auto mb-4 w-32 rounded-full"
-              alt="Avatar" />
-            <h5 class="text-stone-100   mb-2 text-xl font-medium leading-tight">Humberto Carreño</h5>
-            <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-        </div>
-      </section>
+            <div class="w-64 text-center">
+                <img
+                  src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+                  class="mx-auto mb-4 w-32 rounded-full"
+                  alt="Avatar" />
+                <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Juan Jauren</h5>
+                <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+            </div>
+            <div class="w-64 text-center">
+                <img
+                  src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+                  class="mx-auto mb-4 w-32 rounded-full"
+                  alt="Avatar" />
+                <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Hakerman</h5>
+                <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+            </div>
+            <div class="w-64 text-center">
+                <img
+                  src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+                  class="mx-auto mb-4 w-32 rounded-full"
+                  alt="Avatar" />
+                <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jose Cruz</h5>
+                <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+            </div>
+            <div class="w-64 text-center">
+                <img
+                  src="./assets/hc.JPG"
+                  class="mx-auto mb-4 w-32 rounded-full"
+                  alt="Avatar" />
+                <h5 class="text-stone-100   mb-2 text-xl font-medium leading-tight">Humberto Carreño</h5>
+                <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
