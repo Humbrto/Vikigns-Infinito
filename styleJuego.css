@@ -66,8 +66,8 @@ body{
     width: 250px;
     height: 120px;
     position: absolute;
-    bottom: 30%;
-    right: 10%;
+    bottom: -4%;
+    right: -3%;
     z-index: 100;
 
     background: url(assets//dragon.png);
