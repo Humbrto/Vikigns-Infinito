@@ -12,13 +12,13 @@
 <body class="bg-[url('./assets/background.svg')]  w-full min-h-[100vh] overflow-auto max-w-full box-border" id="seccion1">
     <header class="relative inline-block">
         <nav class="fixed top-0 flex w-full items-center justify-around bg-gradient-to-r from-slate-800 via-slate-900 to-gray-900  p-4 lg:px-8 z-10" aria-label="Global"> 
-            <a href="#" class="">
+            <a href="./index.html" class="">
               <span class="sr-only">VIKING</span>
               <img class="h-20 w-auto" src="./assets/viking-title.png" alt="">
             </a>
           </div> 
           <div class="flex justify-end pr-12 gap-x-4 lg:gap-x-12 ">
-            <a href="#" id="home" class="text-sm font-semibold leading-6 text-stone-100 ">Home</a>
+            <a href="./index.html" id="home" class="text-sm font-semibold leading-6 text-stone-100 ">Home</a>
             <a href="./juego.html" id="game" class="text-sm font-semibold leading-6 text-stone-100">Games</a>
             <a href="#Vikings" class="text-sm font-semibold leading-6 text-stone-100">Vikings</a>
           </div>
@@ -55,54 +55,57 @@
                     </div>
                 </article>
                 <article class="flex flex-col justify-center items-center mb-20 xl:mb-2 p-12">
-                  <img src="./assets/viking-run-game.jpeg" alt="" >
-                  <a href="./juego.html" class="bg-[#7e928b] p-4 rounded-xl mt-6 hover:bg-[#584040] hover:text-white hover:scale-105 shadow-md shadow-gray-100">JUEGA AHORA!</a>
+                  <img src="./assets/viking-run-game.png" alt="" >
+                  <a href="./juego.html" class="inline-block rounded bg-primary bg-[#7e928b] rounded-lg p-4 mt-6 text-xs font-bold uppercase leading-normal text-amber-900 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] hover:bg-[#584040] text-white scale-105 shadow-md shadow-gray-100">JUEGA AHORA!</a>
+                  <!-- <a href="./juego.html" class="bg-[#7e928b] p-4 rounded-xl mt-6 hover:bg-[#584040] hover:text-white hover:scale-105 shadow-md shadow-gray-100">JUEGA AHORA!</a> -->
                </article>
                 
             </section>
     
-          <section id="Vikings" class=" flex justify-center items-center flex-col lg:flex-row gap-4 mb-32 lg:my-20">
-              <div class="w-64 text-center">
-                  <img 
-                    src="./assets/viking1.JPG"
-                    class="mx-auto mb-4 w-32 rounded-full"
-                    alt="Avatar" />
-                  <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Calos Cuberos</h5>
-                  <p class="text-neutral-100 dark:text-neutral-400">Designer</p>
-              </div>
-              <div class="w-64 text-center">
-                  <img
-                    src="./assets/viking2.JPG"
-                    class="mx-auto mb-4 w-32 rounded-full"
-                    alt="Avatar" />
-                  <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Juan Jauren</h5>
-                  <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-              </div>
-              <div class="w-64 text-center">
-                  <img
-                    src="./assets/viking3.JPG"
-                    class="mx-auto mb-4 w-32 rounded-full"
-                    alt="Avatar" />
-                  <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jesus Pinto</h5>
-                  <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-              </div>
-              <div class="w-64 text-center">
-                  <img
-                    src="./assets/viking4.JPG"
-                    class="mx-auto mb-4 w-32 rounded-full"
-                    alt="Avatar" />
-                  <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jose Cruz</h5>
-                  <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-              </div>
-              <div class="w-64 text-center">
-                  <img
-                    src="./assets/viking5.JPG"
-                    class="mx-auto mb-4 w-32 rounded-full"
-                    alt="Avatar" />
-                  <h5 class="text-stone-100   mb-2 text-xl font-medium leading-tight">Humberto Carreño</h5>
-                  <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
-              </div>
-              
+          <section id="Vikings" class=" flex flex-col items-center">
+            <h2 class="text-2xl font-bold italic tracking-tight text-amber-500 animate__animated animate__flip">COLABORADORES</h2>
+            <div id="colaboradores" class="flex justify-center items-center flex-col lg:flex-row gap-4 mb-32 lg:my-20">
+                <div class="w-64 text-center">
+                    <img 
+                        src="./assets/viking1.JPG"
+                        class="mx-auto mb-4 w-32 rounded-full"
+                        alt="Avatar" />
+                    <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Calos Cuberos</h5>
+                    <p class="text-neutral-100 dark:text-neutral-400">Designer</p>
+                </div>
+                <div class="w-64 text-center">
+                    <img
+                        src="./assets/viking2.JPG"
+                        class="mx-auto mb-4 w-32 rounded-full"
+                        alt="Avatar" />
+                    <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Juan Jauren</h5>
+                    <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+                </div>
+                <div class="w-64 text-center">
+                    <img
+                        src="./assets/viking3.JPG"
+                        class="mx-auto mb-4 w-32 rounded-full"
+                        alt="Avatar" />
+                    <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jesus Pinto</h5>
+                    <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+                </div>
+                <div class="w-64 text-center">
+                    <img
+                        src="./assets/viking4.JPG"
+                        class="mx-auto mb-4 w-32 rounded-full"
+                        alt="Avatar" />
+                    <h5 class="text-stone-100 mb-2 text-xl font-medium leading-tight">Jose Cruz</h5>
+                    <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+                </div>
+                <div class="w-64 text-center">
+                    <img
+                        src="./assets/viking5.JPG"
+                        class="mx-auto mb-4 w-32 rounded-full"
+                        alt="Avatar" />
+                    <h5 class="text-stone-100   mb-2 text-xl font-medium leading-tight">Humberto Carreño</h5>
+                    <p class="text-neutral-500 dark:text-neutral-400">Web developer</p>
+                </div> 
+            </div>
           </section>
         
 </body>
