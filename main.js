@@ -73,7 +73,7 @@ function Start() {
 function Update() {
     if(parado) return;
     
-    Movervikingosaurio();
+    MoverVikingo();
     MoverSuelo();
     DecidirCrearObstaculos();
     DecidirCrearNubes();
@@ -98,7 +98,7 @@ function Saltar(){
     }
 }
 
-function Movervikingosaurio() {
+function MoverVikingo() {
     vikingoPosY += velY * deltaTime;
     if(vikingoPosY < sueloY){
         
@@ -150,7 +150,7 @@ function CrearObstaculo() {
     contenedor.appendChild(obstaculo);
     obstaculo.classList.add("fuego");
     if(Math.random() > 0.5) obstaculo.classList.add("fuego2");
-    obstaculo.posX = contenedor.clientWidth;
+    obstaculo.posX = contenedor.clientWidth - contenedor.clientWidth*0.2;
     obstaculo.style.left = contenedor.clientWidth+"px";
 
     obstaculos.push(obstaculo);
