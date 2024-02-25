@@ -214,7 +214,7 @@ function GanarPuntos() {
 function GameOver() {
     Estrellarse();
     gameOver.style.display = "block";
-    let boton = document.querySelector('.boton')
+    let boton = document.querySelector('#boton')
     boton.addEventListener('click', resetear)
 }
 
